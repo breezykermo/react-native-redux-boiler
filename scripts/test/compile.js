@@ -10,15 +10,11 @@ var mockDir = path.join(__dirname, 'mocks');
 
 // use babel for this node-modules
 var nodeModulesBabel = [
-  // add modules here
+  // add modules that require babel here
 ];
 
 require.extensions['.js'] = function (module, fileName) {
   output = null;
-  // react native is mocked by react-native-mock
-  //if (fileName.indexOf('node_modules/react-native/Libraries/react-native/react-native.js') >= 0) {
-  //  fileName = path.resolve('./test/mocks/react-native.js');
-  //}
 
   // strip off current working dir from path
   fileNameRel = fileName.replace(cwd + path.sep, '');
