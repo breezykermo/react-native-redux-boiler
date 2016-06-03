@@ -3,7 +3,10 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start"
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "lint": "eslint --config=.eslintrc src/**",
+    "debug:ios": "node node_modules/react-native/local-cli/cli.js run-ios",
+    "debug:android": "adb reverse tcp:8081 tcp:8081 && node_modules/react-native/local-cli/cli.js run-android"
   },
   "dependencies": {
     "react": "15.1.0",
