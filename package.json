@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "postinstall": "sh ./scripts/post-install.sh",
+    "postinstall": "sh ./scripts/post-install.sh && rndebugger-open",
+    "revert-debugger": "rndebugger-open --revert",
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "lint": "eslint --config=.eslintrc src/**",
     "test": "mocha --require react-native-mock/mock.js --compilers js:scripts/test/compile.js --recursive src/**/*.spec.js",
@@ -30,6 +31,7 @@
     "fs": "0.0.2",
     "mocha": "^2.5.3",
     "path": "^0.12.7",
-    "react-native-mock": "^0.2.3"
+    "react-native-mock": "^0.2.3",
+    "react-native-debugger-open": "^0.2.1"
   }
 }
