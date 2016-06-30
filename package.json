@@ -32,6 +32,6 @@
     "mocha": "^2.5.3",
     "path": "^0.12.7",
     "react-native-mock": "^0.2.3",
-    "react-native-debugger-open": "^0.2.1"
+    "react-native-debugger-open": "^0.2.3"
   }
 }
