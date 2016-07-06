@@ -12,11 +12,11 @@ export default function native() {
 
   const store = configureStore()
 
-  const CharityTinder = () => (
+  const OnsiteHire = () => (
     <Provider store={store} >
       <App />
     </Provider>
   )
 
-  AppRegistry.registerComponent('CharityTinder', () => CharityTinder)
+  AppRegistry.registerComponent('OnsiteHire', () => OnsiteHire)
 }

@@ -1,4 +1,4 @@
-package com.charitytinder;
+package com.OnsiteHire;
 
 import android.app.Application;
 import android.util.Log;
