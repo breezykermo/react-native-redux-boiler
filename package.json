@@ -15,8 +15,6 @@
     "debug:ios:6": "npm run debug:ios -- --simulator=\"iPhone 6\"",
     "debug:ios:5": "npm run debug:ios -- --simulator=\"iPhone 5\"",
     "debug:ios:ipad2": "npm run debug:ios -- --simulator=\"iPad 2\"",
-    "debug:ios": "node node_modules/react-native/local-cli/cli.js run-ios",
-    "debug:ios": "node node_modules/react-native/local-cli/cli.js run-ios",
     "debug:android": "adb reverse tcp:8081 tcp:8081 && node_modules/react-native/local-cli/cli.js run-android"
   },
   "dependencies": {
@@ -27,7 +25,7 @@
   },
   "devDependencies": {
     "babel-core": "^6.10.4",
-    "babel-eslint": "6.1.0",
+    "babel-eslint": "6.1.1",
     "chai": "^3.5.0",
     "eslint": "3.0.1",
     "eslint-config-airbnb": "9.0.1",
