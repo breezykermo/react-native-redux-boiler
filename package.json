@@ -17,6 +17,15 @@
     "debug:ios:ipad2": "npm run debug:ios -- --simulator=\"iPad 2\"",
     "debug:android": "adb reverse tcp:8081 tcp:8081 && node_modules/react-native/local-cli/cli.js run-android"
   },
+  "ava": {
+    "babel": "inherit",
+    "require": [
+      "babel-register",
+      "babel-polyfill",
+      "react-native-mock/mock",
+      "./tests/_Setup"
+    ]
+  },
   "dependencies": {
     "react": "^15.2.1",
     "react-native": "^0.29.1",
