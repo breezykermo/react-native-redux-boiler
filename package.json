@@ -7,8 +7,8 @@
     "revert-debugger": "rndebugger-open --revert",
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "lint": "eslint --config=.eslintrc src/**",
-    "test": "mocha --require react-native-mock/mock.js --compilers js:scripts/test/compile.js --recursive src/**/*.spec.js",
-    "test:watch": "npm run test -- --watch",
+    "test": "ava",
+    "test:watch": "ava --watch",
     "debug:ios": "node node_modules/react-native/local-cli/cli.js run-ios",
     "debug:ios:6+": "npm run debug:ios -- --simulator=\"iPhone 6 Plus\"",
     "debug:ios:6s": "npm run debug:ios -- --simulator=\"iPhone 6s\"",
@@ -19,6 +19,7 @@
   },
   "ava": {
     "babel": "inherit",
+    "files": ["tests/**/*.js", "!tests/_Setup.js"],
     "require": [
       "babel-register",
       "babel-polyfill",
