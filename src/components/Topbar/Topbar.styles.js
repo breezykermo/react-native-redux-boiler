@@ -10,10 +10,10 @@ export default {
     width: screenWidth,
     backgroundColor: 'rgba(85, 207, 179, 0.6)',
     justifyContent: 'center',
-    alignItems: 'center',
+    alignItems: 'center'
   },
   text: {
     fontFamily: 'TrebuchetMS',
-    fontSize: 22,
-  },
+    fontSize: 22
+  }
 }

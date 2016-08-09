@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-  View,
+  View
 } from 'react-native'
 import styles from './App.styles.js'
 import Topbar from '../components/Topbar'

@@ -5,8 +5,7 @@
   "scripts": {
     "postinstall": "sh ./scripts/post-install.sh && rndebugger-open",
     "revert-debugger": "rndebugger-open --revert",
-    "start": "node node_modules/react-native/local-cli/cli.js start",
-    "lint": "eslint --config=.eslintrc src/**",
+    "lint": "standard --fix",
     "test": "ava",
     "test:watch": "ava --watch",
     "debug:ios": "node node_modules/react-native/local-cli/cli.js run-ios",
@@ -15,7 +14,13 @@
     "debug:ios:6": "npm run debug:ios -- --simulator=\"iPhone 6\"",
     "debug:ios:5": "npm run debug:ios -- --simulator=\"iPhone 5\"",
     "debug:ios:ipad2": "npm run debug:ios -- --simulator=\"iPad 2\"",
-    "debug:android": "adb reverse tcp:8081 tcp:8081 && node_modules/react-native/local-cli/cli.js run-android"
+    "debug:android": "adb reverse tcp:8081 tcp:8081 && node_modules/react-native/local-cli/cli.js run-android",
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "rc-start": "npm start -- --reset-cache",
+    "clean": "rm -rf $TMPDIR/react-* && watchman watch-del-all && npm cache clean",
+    "clean-start": "npm run clean && npm run rc-start",
+    "fresh-install": "rm -rf $TMPDIR/react-* && rm -rf ios/build/ModuleCache/* && rm -rf node_modules/ && npm cache clean && npm install",
+    "fresh-start": "npm run fresh-install && npm run rc-start"
   },
   "ava": {
     "babel": "inherit",
@@ -31,8 +36,8 @@
     ]
   },
   "dependencies": {
-    "react": "^15.2.1",
-    "react-native": "^0.30.0",
+    "react": "^15.3.0",
+    "react-native": "^0.31.0",
     "react-redux": "4.4.5",
     "redux": "3.5.2"
   },
@@ -41,12 +46,6 @@
     "babel-core": "^6.11.4",
     "babel-eslint": "6.1.2",
     "enzyme": "^2.4.1",
-    "eslint": "^3.1.1",
-    "eslint-config-airbnb": "10.0.0",
-    "eslint-plugin-import": "^1.11.1",
-    "eslint-plugin-jsx-a11y": "2.0.1",
-    "eslint-plugin-react": "6.0.0",
-    "eslint-plugin-react-native": "^1.1.0",
     "flow-bin": "^0.30.0",
     "fs": "0.0.2",
     "mockery": "^1.7.0",
@@ -55,6 +54,7 @@
     "react-addons-test-utils": "^15.2.1",
     "react-dom": "^15.2.1",
     "react-native-debugger-open": "^0.3.0",
-    "react-native-mock": "^0.2.5"
+    "react-native-mock": "^0.2.5",
+    "standard": "^7.1.2"
   }
 }

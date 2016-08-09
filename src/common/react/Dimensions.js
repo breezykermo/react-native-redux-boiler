@@ -3,5 +3,5 @@ const WINDOW = Dimensions.get('window')
 
 export default {
   width: WINDOW.width,
-  height: WINDOW.height,
+  height: WINDOW.height
 }

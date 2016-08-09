@@ -1,15 +1,15 @@
 import {
   createStore,
   // applyMiddleware,
-  compose,
+  compose
 } from 'redux'
 
 import reducers from '../reducers'
 
-export default function configureStore(initialState) {
+export default function configureStore (initialState) {
   const middlewares = [
   ]
-  if (__DEV__) {
+  if (global.__DEV__) {
     if (global.reduxNativeDevTools) middlewares.push(global.reduxNativeDevTools())
   }
   return createStore(

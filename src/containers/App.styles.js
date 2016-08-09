@@ -7,6 +7,6 @@ export default {
     alignItems: 'center',
     backgroundColor: 'white',
     width: Dimensions.width,
-    height: Dimensions.height,
-  },
+    height: Dimensions.height
+  }
 }
