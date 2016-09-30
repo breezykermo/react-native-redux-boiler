@@ -48,7 +48,7 @@
     "babel-core": "^6.11.4",
     "babel-eslint": "6.1.2",
     "enzyme": "^2.4.1",
-    "flow-bin": "^0.30.0",
+    "flow-bin": "^0.33.0",
     "fs": "0.0.2",
     "mockery": "^1.7.0",
     "nyc": "^7.0.0",
