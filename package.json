@@ -13,7 +13,7 @@
     "debug:ios:6s": "npm run debug:ios -- --simulator=\"iPhone 6s\"",
     "debug:ios:6": "npm run debug:ios -- --simulator=\"iPhone 6\"",
     "debug:ios:5": "npm run debug:ios -- --simulator=\"iPhone 5\"",
-    "debug:ios:ipad2": "npm run debug:ios -- --simulator=\"iPad 2\"",
+    "debug:ios:ipad2": "npm run debug:ios -- --simulator=\"iPad Pro\"",
     "debug:android": "adb reverse tcp:8081 tcp:8081 && node_modules/react-native/local-cli/cli.js run-android",
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "rc-start": "npm start -- --reset-cache",
@@ -36,27 +36,25 @@
     ]
   },
   "dependencies": {
-    "ava": "^0.16.0",
-    "react": "^15.3.0",
-    "react-native": "^0.33.0",
+    "react": "^15.3.2",
+    "react-native": "^0.36.0",
     "react-redux": "4.4.5",
-    "redux": "^3.6.0",
-    "standard": "^8.0.0"
+    "redux": "^3.6.0"
   },
   "devDependencies": {
-    "ava": "^0.15.2",
-    "babel-core": "^6.11.4",
-    "babel-eslint": "6.1.2",
-    "enzyme": "^2.4.1",
-    "flow-bin": "^0.30.0",
+    "ava": "^0.16.0",
+    "babel-core": "^6.18.0",
+    "babel-eslint": "^7.1.0",
+    "enzyme": "^2.5.1",
+    "flow-bin": "^0.33.0",
     "fs": "0.0.2",
-    "mockery": "^1.7.0",
-    "nyc": "^7.0.0",
+    "mockery": "^2.0.0",
+    "nyc": "^8.3.2",
     "path": "^0.12.7",
-    "react-addons-test-utils": "^15.2.1",
-    "react-dom": "^15.2.1",
+    "react-addons-test-utils": "^15.3.2",
+    "react-dom": "^15.3.2",
     "react-native-debugger-open": "^0.3.0",
-    "react-native-mock": "^0.2.5",
-    "standard": "^7.1.2"
+    "react-native-mock": "^0.2.7",
+    "standard": "^8.5.0"
   }
 }
