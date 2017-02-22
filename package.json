@@ -36,25 +36,25 @@
     ]
   },
   "dependencies": {
-    "react": "^15.3.2",
-    "react-native": "^0.36.0",
-    "react-redux": "4.4.5",
+    "react": "^15.4.2",
+    "react-native": "^0.41.2",
+    "react-redux": "^5.0.2",
     "redux": "^3.6.0"
   },
   "devDependencies": {
-    "ava": "^0.16.0",
-    "babel-core": "^6.18.0",
-    "babel-eslint": "^7.1.0",
-    "enzyme": "^2.5.1",
-    "flow-bin": "^0.33.0",
+    "ava": "^0.18.2",
+    "babel-core": "^6.23.1",
+    "babel-eslint": "^7.1.1",
+    "enzyme": "^2.7.1",
+    "flow-bin": "^0.39.0",
     "fs": "0.0.2",
     "mockery": "^2.0.0",
-    "nyc": "^8.3.2",
+    "nyc": "^10.1.2",
     "path": "^0.12.7",
-    "react-addons-test-utils": "^15.3.2",
-    "react-dom": "^15.3.2",
-    "react-native-debugger-open": "^0.3.0",
-    "react-native-mock": "^0.2.7",
-    "standard": "^8.5.0"
+    "react-addons-test-utils": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-native-debugger-open": "^0.3.2",
+    "react-native-mock": "^0.3.1",
+    "standard": "^8.6.0"
   }
 }

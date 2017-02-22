@@ -1,4 +1,4 @@
-import { Dimensions } from '../common/react'
+import { Dimensions } from '../../common/react'
 
 export default {
   container: {
