@@ -37,24 +37,24 @@
   },
   "dependencies": {
     "react": "^15.4.2",
-    "react-native": "^0.41.2",
-    "react-redux": "^5.0.2",
+    "react-native": "^0.42.3",
+    "react-redux": "^5.0.3",
     "redux": "^3.6.0"
   },
   "devDependencies": {
     "ava": "^0.18.2",
-    "babel-core": "^6.23.1",
-    "babel-eslint": "^7.1.1",
-    "enzyme": "^2.7.1",
-    "flow-bin": "^0.39.0",
+    "babel-core": "^6.24.0",
+    "babel-eslint": "^7.2.1",
+    "enzyme": "^2.8.0",
+    "flow-bin": "latest",
     "fs": "0.0.2",
     "mockery": "^2.0.0",
-    "nyc": "^10.1.2",
+    "nyc": "^10.2.0",
     "path": "^0.12.7",
     "react-addons-test-utils": "^15.4.2",
     "react-dom": "^15.4.2",
-    "react-native-debugger-open": "^0.3.2",
+    "react-native-debugger-open": "^0.3.3",
     "react-native-mock": "^0.3.1",
-    "standard": "^8.6.0"
+    "standard": "latest"
   }
 }
