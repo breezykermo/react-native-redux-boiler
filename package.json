@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "postinstall": "sh ./scripts/post-install.sh && rndebugger-open",
+    "postinstall": "rndebugger-open",
     "revert-debugger": "rndebugger-open --revert",
     "lint": "standard --fix",
     "test": "ava",
