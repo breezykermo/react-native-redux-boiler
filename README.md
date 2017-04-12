@@ -1,11 +1,19 @@
-# OnsiteHire
+# React Native Redux Boiler
 
-## Testing
+This is a boilerplate project for a React Native application that uses Redux to manage state. Note that I use [React Native Debugger](https://github.com/jhen0409/react-native-debugger) for debugging, which I highly recommend as a way to visualize the redux logic in your application. I do my best to keep this updated with the latest version of React Native. 
 
-Testing is set up to stub node imports with those folders that exist in *scripts/test/mocks/node_modules*.
-It is also possible to stub files or folders in src, or anywhere else in the project, by adding them to
-the *scripts/test/mocks* folder.
+```bash
+git clone https://github.com/breezykermo/react-native-redux-boiler my-project
+cd my-project
+sudo rm -r .git   #remove git history
+git init
+git remote add origin https://github.com/{your-username}/{your-repo-name}
 
-NB: react 15.0.2 and react-native are necessary in devDependencies (or, at least, seem to be)
-in order to have react-native-mock run appropriately with mocha. I should regularly try to
-update this.
+brew update && brew cask install react-native-debugger
+npm i -g yarn
+npm i -g react-native-debugger-open
+yarn   #install dependencies: can also use 'npm install'
+
+#run the app on iOS simulator
+npm run debug:ios
+```
