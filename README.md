@@ -1,6 +1,9 @@
 # React Native Redux Boiler
 
-This is a boilerplate project for a React Native application that uses Redux to manage state. Note that I use [React Native Debugger](https://github.com/jhen0409/react-native-debugger) for debugging, which I highly recommend as a way to visualize the redux logic in your application. I do my best to keep this updated with the latest version of React Native. 
+This is a boilerplate project for a React Native application that uses Redux to manage state. Note that I use [React Native Debugger](https://github.com/jhen0409/react-native-debugger) for debugging, which I highly recommend as a way to visualize the redux logic in your application. I do my best to keep this updated with the latest version of React Native.
+
+The boilerplate also includes linting with [Standard](https://github.com/feross/standard), and a skeleton testing suite with [Ava](https://github.com/avajs/ava).
+## Getting Started
 
 ```bash
 git clone https://github.com/breezykermo/react-native-redux-boiler my-project
@@ -17,3 +20,4 @@ yarn   #install dependencies: can also use 'npm install'
 #run the app on iOS simulator
 npm run debug:ios
 ```
+
